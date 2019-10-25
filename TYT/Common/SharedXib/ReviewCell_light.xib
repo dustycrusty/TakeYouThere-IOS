@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="113" id="jas-gA-ZkQ" customClass="ReviewCell_light" customModule="TYT" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="113"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jas-gA-ZkQ" id="zLn-uW-tZT">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="112.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Plv-LD-MEO">
+                        <rect key="frame" x="16" y="11" width="201" height="18"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Getting Name...">
+                                <attributes>
+                                    <font key="NSFont" size="16" name="Ubuntu"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gcj-Qd-s0E">
+                        <rect key="frame" x="16" y="47" width="343" height="55"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Getting Content...">
+                                <attributes>
+                                    <font key="NSFont" size="16" name="Ubuntu"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHa-fI-0P2">
+                        <rect key="frame" x="330" y="11" width="29" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="WHa-fI-0P2" secondAttribute="height" multiplier="29:22" id="2qS-bN-fgL"/>
+                            <constraint firstAttribute="width" constant="29" id="Mjd-QJ-Nfd"/>
+                        </constraints>
+                        <state key="normal" image="dropDownMenu"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9GB-Qp-es3">
+                        <rect key="frame" x="249.5" y="13" width="72.5" height="18"/>
+                        <attributedString key="attributedText"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Plv-LD-MEO" firstAttribute="top" secondItem="zLn-uW-tZT" secondAttribute="topMargin" id="55w-6T-th7"/>
+                    <constraint firstItem="9GB-Qp-es3" firstAttribute="width" secondItem="WHa-fI-0P2" secondAttribute="width" multiplier="2.5" id="Cxf-kZ-Hah"/>
+                    <constraint firstItem="WHa-fI-0P2" firstAttribute="trailing" secondItem="zLn-uW-tZT" secondAttribute="trailingMargin" id="D7R-PU-3qE"/>
+                    <constraint firstItem="9GB-Qp-es3" firstAttribute="leading" secondItem="Plv-LD-MEO" secondAttribute="trailing" constant="32.5" id="DN6-9p-5iQ"/>
+                    <constraint firstItem="Plv-LD-MEO" firstAttribute="leading" secondItem="zLn-uW-tZT" secondAttribute="leadingMargin" id="VHm-a7-3fH"/>
+                    <constraint firstItem="Gcj-Qd-s0E" firstAttribute="top" secondItem="WHa-fI-0P2" secondAttribute="bottom" constant="14" id="WDK-Aq-nJG"/>
+                    <constraint firstItem="WHa-fI-0P2" firstAttribute="top" secondItem="zLn-uW-tZT" secondAttribute="topMargin" id="X7r-4V-qYV"/>
+                    <constraint firstItem="Gcj-Qd-s0E" firstAttribute="bottom" secondItem="zLn-uW-tZT" secondAttribute="bottomMargin" id="crE-op-LIq"/>
+                    <constraint firstItem="9GB-Qp-es3" firstAttribute="top" secondItem="zLn-uW-tZT" secondAttribute="topMargin" constant="2" id="gS9-Yk-xJU"/>
+                    <constraint firstItem="Gcj-Qd-s0E" firstAttribute="leading" secondItem="zLn-uW-tZT" secondAttribute="leadingMargin" id="gSu-em-Ikl"/>
+                    <constraint firstItem="WHa-fI-0P2" firstAttribute="leading" secondItem="9GB-Qp-es3" secondAttribute="trailing" constant="8" id="jOV-Lf-hKz"/>
+                    <constraint firstItem="Gcj-Qd-s0E" firstAttribute="top" secondItem="9GB-Qp-es3" secondAttribute="bottom" constant="16" id="ld1-BO-PW2"/>
+                    <constraint firstItem="Gcj-Qd-s0E" firstAttribute="trailing" secondItem="zLn-uW-tZT" secondAttribute="trailingMargin" id="ojV-DC-T6P"/>
+                    <constraint firstItem="Gcj-Qd-s0E" firstAttribute="top" secondItem="Plv-LD-MEO" secondAttribute="bottom" constant="18" id="xc8-yf-mcP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="name" destination="Plv-LD-MEO" id="zod-0j-tt4"/>
+                <outlet property="reviewActionButton" destination="WHa-fI-0P2" id="im9-9s-BiE"/>
+                <outlet property="reviewContent" destination="Gcj-Qd-s0E" id="o0O-R3-DZT"/>
+                <outlet property="reviewRating" destination="9GB-Qp-es3" id="YtO-Fm-QDi"/>
+            </connections>
+            <point key="canvasLocation" x="-274.39999999999998" y="-51.724137931034484"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dropDownMenu" width="29" height="7"/>
+    </resources>
+</document>

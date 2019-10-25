@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RequestStatusCell" rowHeight="131" id="Dh9-nO-rgR" customClass="RequestStatusCell" customModule="TYT" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="131"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Dh9-nO-rgR" id="YY7-eC-Q7V">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="130.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fnX-nV-AL8" customClass="RoundDriverImage" customModule="TYT" customModuleProvider="target">
+                        <rect key="frame" x="24" y="46" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="fnX-nV-AL8" secondAttribute="height" multiplier="1:1" id="jQc-UC-vFZ"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p6v-ip-JOc" customClass="RoundDriverImage" customModule="TYT" customModuleProvider="target">
+                        <rect key="frame" x="300" y="37" width="51" height="51"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="p6v-ip-JOc" secondAttribute="height" multiplier="1:1" id="f2u-eo-1d9"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJh-y5-ixk">
+                        <rect key="frame" x="0.0" y="3" width="375" height="18"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Loading">
+                                <attributes>
+                                    <font key="NSFont" size="16" name="Ubuntu"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0W6-Fz-ipe">
+                        <rect key="frame" x="92" y="46" width="200" height="18"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Loading">
+                                <attributes>
+                                    <font key="NSFont" size="16" name="Ubuntu"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHv-dJ-6DY">
+                        <rect key="frame" x="169" y="96" width="182" height="18"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Loading">
+                                <attributes>
+                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <font key="NSFont" size="16" name="Ubuntu"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeS-vg-oyd">
+                        <rect key="frame" x="92" y="96" width="69" height="18"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Loading">
+                                <attributes>
+                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <font key="NSFont" size="16" name="Ubuntu"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fnX-nV-AL8" firstAttribute="top" secondItem="MJh-y5-ixk" secondAttribute="bottom" constant="25" id="0Y5-Ac-u1z"/>
+                    <constraint firstItem="fnX-nV-AL8" firstAttribute="width" secondItem="YY7-eC-Q7V" secondAttribute="width" multiplier="60/375" id="210-Gh-fRj"/>
+                    <constraint firstItem="p6v-ip-JOc" firstAttribute="width" secondItem="YY7-eC-Q7V" secondAttribute="width" multiplier="51/375" id="46j-Ts-tKH"/>
+                    <constraint firstItem="MJh-y5-ixk" firstAttribute="leading" secondItem="YY7-eC-Q7V" secondAttribute="leading" id="4Us-Xx-De9"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="p6v-ip-JOc" secondAttribute="trailing" constant="8" id="CDe-9H-3rg"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="jeS-vg-oyd" secondAttribute="bottom" constant="6" id="HBE-hh-bMi"/>
+                    <constraint firstItem="fnX-nV-AL8" firstAttribute="leading" secondItem="YY7-eC-Q7V" secondAttribute="leadingMargin" constant="8" id="Ntm-Z9-6lN"/>
+                    <constraint firstItem="jeS-vg-oyd" firstAttribute="width" secondItem="YY7-eC-Q7V" secondAttribute="width" multiplier="69/375" id="abI-o3-ycd"/>
+                    <constraint firstItem="ZHv-dJ-6DY" firstAttribute="top" secondItem="p6v-ip-JOc" secondAttribute="bottom" constant="8" id="cSn-kz-FfV"/>
+                    <constraint firstItem="jeS-vg-oyd" firstAttribute="leading" secondItem="fnX-nV-AL8" secondAttribute="trailing" constant="8" id="fHY-q3-Ea6"/>
+                    <constraint firstItem="0W6-Fz-ipe" firstAttribute="top" secondItem="fnX-nV-AL8" secondAttribute="top" id="fSo-FE-zmM"/>
+                    <constraint firstItem="p6v-ip-JOc" firstAttribute="top" secondItem="MJh-y5-ixk" secondAttribute="bottom" constant="16" id="iQm-qV-qQJ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ZHv-dJ-6DY" secondAttribute="bottom" constant="6" id="lGY-Is-6sC"/>
+                    <constraint firstItem="MJh-y5-ixk" firstAttribute="width" secondItem="YY7-eC-Q7V" secondAttribute="width" id="mw4-08-WH8"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="fnX-nV-AL8" secondAttribute="bottom" constant="14" id="nXN-EL-thb"/>
+                    <constraint firstItem="0W6-Fz-ipe" firstAttribute="leading" secondItem="fnX-nV-AL8" secondAttribute="trailing" constant="8" id="rrL-Eb-JLQ"/>
+                    <constraint firstItem="ZHv-dJ-6DY" firstAttribute="leading" secondItem="jeS-vg-oyd" secondAttribute="trailing" constant="8" id="sTq-do-wBz"/>
+                    <constraint firstItem="p6v-ip-JOc" firstAttribute="leading" secondItem="0W6-Fz-ipe" secondAttribute="trailing" constant="8" id="tMH-SB-AiL"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ZHv-dJ-6DY" secondAttribute="trailing" constant="8" id="tie-ub-0zH"/>
+                    <constraint firstItem="MJh-y5-ixk" firstAttribute="top" secondItem="YY7-eC-Q7V" secondAttribute="top" constant="3" id="uSG-sa-0da"/>
+                    <constraint firstAttribute="trailing" secondItem="MJh-y5-ixk" secondAttribute="trailing" id="wzp-bU-lmS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="DriverImage" destination="fnX-nV-AL8" id="A1k-4D-Iq2"/>
+                <outlet property="carImage" destination="p6v-ip-JOc" id="uYG-z4-E5g"/>
+                <outlet property="carName" destination="ZHv-dJ-6DY" id="9H2-56-vbn"/>
+                <outlet property="dateFromUntil" destination="MJh-y5-ixk" id="coP-CZ-9Qd"/>
+                <outlet property="driverName" destination="0W6-Fz-ipe" id="nCK-aA-i3e"/>
+                <outlet property="requestStatus" destination="jeS-vg-oyd" id="QON-GZ-slI"/>
+            </connections>
+            <point key="canvasLocation" x="141.59999999999999" y="25.637181409295355"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="113" id="ym9-k7-0ba" customClass="ReviewCell_dark" customModule="TYT" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="113"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ym9-k7-0ba" id="wTV-1z-jED">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="112.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8d3-qp-Mhe">
+                        <rect key="frame" x="16" y="11" width="201" height="18"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Getting Name...">
+                                <attributes>
+                                    <font key="NSFont" size="16" name="Ubuntu"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Pw-bY-c4e">
+                        <rect key="frame" x="16" y="47" width="343" height="55"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Getting Content...">
+                                <attributes>
+                                    <font key="NSFont" size="16" name="Ubuntu"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YyK-zn-xVX">
+                        <rect key="frame" x="330" y="11" width="29" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="YyK-zn-xVX" secondAttribute="height" multiplier="29:22" id="7e6-dS-zQT"/>
+                            <constraint firstAttribute="width" constant="29" id="z7O-0R-mlS"/>
+                        </constraints>
+                        <state key="normal" image="dropDownMenu_Light"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaP-dM-mIg">
+                        <rect key="frame" x="249.5" y="13" width="72.5" height="18"/>
+                        <attributedString key="attributedText"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3Pw-bY-c4e" firstAttribute="trailing" secondItem="wTV-1z-jED" secondAttribute="trailingMargin" id="10Z-PM-gFW"/>
+                    <constraint firstItem="YyK-zn-xVX" firstAttribute="leading" secondItem="yaP-dM-mIg" secondAttribute="trailing" constant="8" id="27b-hq-c3t"/>
+                    <constraint firstItem="3Pw-bY-c4e" firstAttribute="bottom" secondItem="wTV-1z-jED" secondAttribute="bottomMargin" id="KhT-hy-qOs"/>
+                    <constraint firstItem="yaP-dM-mIg" firstAttribute="leading" secondItem="8d3-qp-Mhe" secondAttribute="trailing" constant="32.5" id="XFf-Pc-HSa"/>
+                    <constraint firstItem="3Pw-bY-c4e" firstAttribute="top" secondItem="yaP-dM-mIg" secondAttribute="bottom" constant="16" id="Y7f-8l-C0A"/>
+                    <constraint firstItem="YyK-zn-xVX" firstAttribute="trailing" secondItem="wTV-1z-jED" secondAttribute="trailingMargin" id="YWv-KH-Gcd"/>
+                    <constraint firstItem="3Pw-bY-c4e" firstAttribute="top" secondItem="YyK-zn-xVX" secondAttribute="bottom" constant="14" id="bbu-9R-AGO"/>
+                    <constraint firstItem="YyK-zn-xVX" firstAttribute="top" secondItem="wTV-1z-jED" secondAttribute="topMargin" id="bmQ-0w-azX"/>
+                    <constraint firstItem="3Pw-bY-c4e" firstAttribute="top" secondItem="8d3-qp-Mhe" secondAttribute="bottom" constant="18" id="mHG-ZJ-eaD"/>
+                    <constraint firstItem="8d3-qp-Mhe" firstAttribute="top" secondItem="wTV-1z-jED" secondAttribute="topMargin" id="mXm-5U-KH7"/>
+                    <constraint firstItem="8d3-qp-Mhe" firstAttribute="leading" secondItem="wTV-1z-jED" secondAttribute="leadingMargin" id="otu-ys-Pvz"/>
+                    <constraint firstItem="3Pw-bY-c4e" firstAttribute="leading" secondItem="wTV-1z-jED" secondAttribute="leadingMargin" id="wGz-xv-oeI"/>
+                    <constraint firstItem="yaP-dM-mIg" firstAttribute="width" secondItem="YyK-zn-xVX" secondAttribute="width" multiplier="2.5" id="xvo-6a-lMN"/>
+                    <constraint firstItem="yaP-dM-mIg" firstAttribute="top" secondItem="wTV-1z-jED" secondAttribute="topMargin" constant="2" id="z0t-62-cmM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="name" destination="8d3-qp-Mhe" id="YEb-QF-YOR"/>
+                <outlet property="reviewActionButton" destination="YyK-zn-xVX" id="uBV-0K-JMV"/>
+                <outlet property="reviewContent" destination="3Pw-bY-c4e" id="mFc-Vz-NRB"/>
+                <outlet property="reviewRating" destination="yaP-dM-mIg" id="tIC-K5-bFm"/>
+            </connections>
+            <point key="canvasLocation" x="-274.39999999999998" y="-51.724137931034484"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dropDownMenu_Light" width="29" height="7"/>
+    </resources>
+</document>
